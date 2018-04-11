@@ -138,7 +138,8 @@ h1 span {
 }
 
 .main-nav__link {
-  padding: 0 22px;
+  margin: 0 22px;
+  padding: 14px 0;
   font-family: 'Futura PT', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -146,6 +147,10 @@ h1 span {
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
+}
+
+.main-nav__link:hover {
+  border-bottom: 3px solid #7be99e;
 }
 
 .page-header__contacts {
@@ -180,8 +185,22 @@ h1 span {
   letter-spacing: 0.8px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #74e196;
+  color: #7be99e;
   border: 3px solid #000;
+}
+
+.btn--white {
+  border-color: #fff;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #7be99e;
+}
+
+.btn:activ {
+  color: #7be99e
+  background-color: #fff;
 }
 
 .container__title {
@@ -362,9 +381,10 @@ h1 span {
 }
 
 .sale {
-  height: 360px;
+  height: 365px;
   text-align: center;
   background-image: url(../images/sale.jpg);
+  background-repeat: no-repeat;
 }
 
 .container__title--white {
@@ -404,13 +424,11 @@ h1 span {
   margin-top: 56px;
 }
 
-.btn--white {
-  border-color: #fff;
-}
 
 .team {
-  padding: 26px 200px;
-  height: 800px;
+  margin-top: 55px;
+  padding: 0 200px;
+  height: 740px;
   text-align: center;
   background-image: url(../images/team.jpg);
   background-repeat: no-repeat;
@@ -429,7 +447,7 @@ h1 span {
 }
 
 .team__btn {
-  margin-top: 60px;
+  margin-top: 55px;
 }
 
 .community {
@@ -453,7 +471,7 @@ h1 span {
 }
 
 .community__map {
-  height: 470px;
+  margin-top: 40px;
 }
 
 .gallery__img {
@@ -463,6 +481,7 @@ h1 span {
 
 .page-footer {
   margin-top: 90px;
+  height: 300px;
   background-image: url(../images/bg-footer.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -476,7 +495,7 @@ h1 span {
 }
 
 .page-footer__social {
-  margin: 50px 210px;
+  margin: 50px 210px 0 210px;
   display: inline-block;
   vertical-align: top;
 }
@@ -484,29 +503,55 @@ h1 span {
 .social__item {
   margin: 22px;
   display: inline-block;
+}
+
+.social__link {/*
+  margin: 22px;*/
+  display: inline-block;
   background: url(../images/css_sprites.png) no-repeat 0 0;
   vertical-align: middle;
 }
 
-.social__item--youtube {
-  width: 32px;
-  height: 32px;
-  background-position: -62px -186px;
-}
-.social__item--instagram {
+.social__link--youtube {
   width: 32px;
   height: 32px;
   background-position: -10px -186px;
 }
-.social__item--facebook {
+.social__link--instagram {
+  width: 32px;
+  height: 32px;
+  background-position: -114px -186px;
+}
+.social__link--facebook {
   width: 18px;
   height: 33px;
-  background-position: -269px -10px;
+  background-position: -269px -57px;
 }
-.social__item--vk {
+.social__link--vk {
   width: 40px;
   height: 24px;
-  background-position: -171px -186px;
+  background-position: -70px -238px;
+}
+
+.social__link--youtube:hover {
+  width: 32px;
+  height: 32px;
+  background-position: -62px -186px;
+}
+.social__link--instagram:hover {
+  width: 32px;
+  height: 32px;
+  background-position: -166px -186px;
+}
+.social__link--facebook:hover {
+  width: 18px;
+  height: 33px;
+  background-position: -269px -110px;
+}
+.social__link--vk:hover {
+  width: 40px;
+  height: 24px;
+  background-position: -10px -238px;
 }
 
 .page-footer__contacts-footer {
@@ -514,4 +559,50 @@ h1 span {
   margin-top: 62px;
   display: inline-block;
   vertical-align: top;
+}
+
+.page-footer__copyright {
+  display: inline-block;
+}
+
+.page-footer__text {
+  margin: 0;
+  margin-top: 30px;
+  padding: 0 5px;
+  font-family: 'Futura PT', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: #000;
+}
+
+.footer-nav{
+  margin-left: 150px;
+  margin-right: -20px;
+  display: inline-block;
+  text-align: right;
+}
+
+.footer-nav__item {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.footer-nav__link {
+  margin: 0;
+  margin-top: 30px;
+  padding: 0 5px;
+  font-family: 'Futura PT', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: right;
+  color: #000;
+}
+
+.footer-nav__link:hover {
+  color: #5e5e5e;
 }
